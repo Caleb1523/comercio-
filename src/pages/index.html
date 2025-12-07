@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/output.css">
+    <link href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css" rel="stylesheet" />
+    <title>Document</title>
+</head>
+
+    <body class="bg-gray-50 font-sans">
+        <header class="bg-white shadow-lg sticky top-0 z-50">
+            <nav class="container mx-auto px-4 py-4">
+                <div class="flex justify-between items-center">
+                    <div class=" flex items-center">
+                        <div class="bg-linear-to-r from-blue-600 to-purple-600
+text-white px-3 py-2 rounded-lg mr-3">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0
+20 20">
+                                <path d="M3 4a1 1 0 011-1h12a1 1 0 011 1v2a1 1 0
+01-1 1H4a1 1 0 01-1-1V4zM3 10a1 1 0 011-1h6a1 1 0 011 1v6a1
+ 1 0 01-1 1H4a1 1 0 01-1-1v-6zM14 9a1 1 0 00-1 1v6a1
+1 0 001 1h2a1 1 0 001-1v-6a1 1 0 00-1-1h-2z" />
+                            </svg>
+
+                        </div>
+                        <h1 class="text-2xl font-bold bg-linear-to-r from-blue-600
+to-purple-600 bg-clip-text text-transparent">
+                            <a href="./index.html">TechStore Pro</a>
+                        </h1>
+                    </div>
+
+                    <!-- menu .html -->
+                    <div class="hidden md:flex space-x-6">
+                        <a href="./index.html"
+                            class="text-gray-700 hover.text-blue-600 font-medium transition-colors duration-200 relative group">
+                            Inicio
+                            <span class="absolute -bottom-1 left-0 w-full h-0.5 bg-blue-600"></span>
+                        </a>
+                        <a href="./productos.html"
+                            class="text-gray-700 hover:text-blue-600 font-medium transition-colors duration-200 relative group">
+                            Productos
+                            <span
+                                class="absolute -bottom-1 left-0 w-0 h-0.5 bg-blue-600 transition-all duration-200 group-hover:w-full"></span>
+                        </a>
+                        <a href="./categoria.html"
+                            class="text-gray-700 hover:text-blue-600 font-medium transition-colors duration-200 relative group">
+                            Categorías
+                            <span
+                                class="absolute -bottom-1 left-0 w-0 h-0.5 bg-blue-600 transition-all duration-200 group-hover:w-full"></span>
+                        </a>
+                        <a href="./contactenos.html"
+                            class="text-gray-700 hover:text-blue-600 fontmedium transition-colors duration-200 relative group">
+                            Contacto
+                            <span
+                                class="absolute -bottom-1 left-0 w-0 h-0.5 bg-blue-600 transition-all duration-200 group-hover:w-full"></span>
+                        </a>
+
+                    </div>
+
+                    <div class="flex items-center space-x-4">
+
+                        <a href="./carrito.html" class="cart-icon relative group p-2.5 hover:bglinear-to-r hover:from-blue-50 hover:to-indigo-50 rounded-xl transition-all
+duration-300 transform hover:scale-105">
+                            <svg class="w-6 h-6 text-gray-700 group-hover:textblue-600 transition-all duration-300 group-hover:rotate-3"
+                                fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+                                <path stroke-linecap="round" strokelinejoin="round" d="M3 3h2l.4 2M7 13h10l4-8H5.4m0 0L7 13m0 0l-1.1 5M7 13l-1.1
+5m0 0h1.1m0-5v5m0 0h10m-10 0a2 2 0 104 0m6 0a2 2 0 100 4" />
+                            </svg>
+
+                            <span id="cart-counter" class="cart-counter-pulse
+absolute -top-2 -right-2 bg-linear-to-r from-red-500 via-pink-500 to-red-600
+text-white text-xs font-bold rounded-full min-w-5 h-5 flex items-center
+justify-center px-1 shadow-lg border-2 border-white" style="display:
+none;">0</span>
+
+<div id="user-menu-container">
+    <!-- Si no hay sesión, mostrar el link de login -->
+    <a href="./login.html"
+        class="relative group p-2.5 hover:bg-linear-to-r hover:from-blue-50 hover:to-indigo-50 rounded-xl transition-all duration-300 transform hover:scale-105">
+        <svg class="w-6 h-6 text-gray-700 group-hover:text-blue-600 transition-all duration-300" fill="none"
+            stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round"
+                d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+        </svg>
+    </a>
+</div>
+
+
+                    </div>
+
+                </div>
+            </nav>
+        </header>
+        <main>
+            <section
+                class="0 bg-gradient-to-r from-blue-600 via-purple-600 to-indigo-600 text-white py-20 relative overflow-hidden">
+                <div class="absolute inset-0 bg-black opacity-10"></div>
+
+                <div class="container mx-auto px-4 relative z-10">
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
+
+                        <!-- COLUMNA IZQUIERDA: TEXTO -->
+                        <div class="text-center lg:text-left">
+                            <h1 class="text-5xl md:text-6xl font-bold mb-6 animate-fadein">
+                                Encuentra la mejor <span class="text-yellow-300">tecnología</span>
+                            </h1>
+                            <p class="text-xl md:text-2xl mb-8 opacity-90">
+                                Laptops, celulares y componentes PC al mejor precio del mercado
+                            </p>
+                            <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+                                <a href="./productos.html"
+                                    class="bg-white text-blue-600 px-8 py-4 rounded-lg text-lg font-semibold hover:bg-gray-100 transition duration-300 transform hover:scale-105">
+                                    Ver Productos
+                                </a>
+                                <button
+                                    class="border-2 border-white text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-white hover:text-blue-600 transition duration-300">
+                                    Ofertas Especiales
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- COLUMNA DERECHA: CARRUSEL CON SOMBRA -->
+                        <div>
+                            <div id="default-carousel"
+                                class="relative w-full shadow-2xl shadow-black rounded-4xl overflow-hidden"
+                                data-carousel="slide">
+                                <div class="relative h-64 overflow-hidden rounded-2xl md:h-96">
+                                    <div class="hidden duration-700 ease-in-out" data-carousel-item="active">
+                                        <img src="../img/IMG-20251023-WA0007.jpg"
+                                            class="absolute block w-full h-full object-cover" alt="Imagen 1">
+                                    </div>
+                                    <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                                        <img src="../img/IMG-20251023-WA0008.jpg"
+                                            class="absolute block w-full h-full object-cover" alt="Imagen 2">
+                                    </div>
+                                    <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                                        <img src="../img/IMG-20251023-WA0009.jpg"
+                                            class="absolute block w-full h-full object-cover" alt="Imagen 3">
+                                    </div>
+                                    <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                                        <img src="../img/IMG-20251023-WA0011.jpg"
+                                            class="absolute block w-full h-full object-cover" alt="Imagen 4">
+                                    </div>
+                                    <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                                        <img src="../img/IMG-20251023-WA0010.jpg"
+                                            class="absolute block w-full h-full object-cover" alt="Imagen 5">
+                                    </div>
+                                </div>
+
+                                <!-- Indicadores -->
+                                <div class="absolute z-30 flex -translate-x-1/2 bottom-5 left-1/2 space-x-3">
+                                    <button type="button"
+                                        class="w-3 h-3 rounded-full bg-white hover:bg-purple-600 transition"
+                                        data-carousel-slide-to="0"></button>
+                                    <button type="button"
+                                        class="w-3 h-3 rounded-full  bg-white hover:bg-purple-600 transition"
+                                        data-carousel-slide-to="1"></button>
+                                    <button type="button"
+                                        class="w-3 h-3 rounded-full  bg-white hover:bg-purple-600 transition"
+                                        data-carousel-slide-to="2"></button>
+                                    <button type="button"
+                                        class="w-3 h-3 rounded-full  bg-white hover:bg-purple-600 transition"
+                                        data-carousel-slide-to="3"></button>
+                                    <button type="button"
+                                        class="w-3 h-3 rounded-full  bg-white hover:bg-purple-600 transition"
+                                        data-carousel-slide-to="4"></button>
+                                </div>
+
+                                <!-- Controles -->
+                                <button type="button"
+                                    class="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 group"
+                                    data-carousel-prev>
+                                    <span
+                                        class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 group-hover:bg-purple-600">
+                                        <svg class="w-4 h-4 text-white" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                            viewBox="0 0 6 10">
+                                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                                stroke-width="2" d="M5 1 1 5l4 4" />
+                                        </svg>
+                                    </span>
+                                </button>
+                                <button type="button"
+                                    class="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 group"
+                                    data-carousel-next>
+                                    <span
+                                        class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 group-hover:bg-purple-600">
+                                        <svg class="w-4 h-4 text-white" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                            viewBox="0 0 6 10">
+                                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                                stroke-width="2" d="m1 9 4-4-4-4" />
+                                        </svg>
+                                    </span>
+                                </button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+
+            </div>
+
+
+
+            <section id="categorias" class="categorias py-16 bg-gray-50">
+                <div class="container mx-auto px-4">
+                    <div class="text-center mb-12">
+                        <h2 class="text-4xl font-bold mb-4">Nuestras Categorías</h2>
+                        <p class="text-gray-600 text-lg">Descubre nuestra amplia gama de
+                            productos tecnológicos</p>
+                    </div>
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+
+                        <div class="bg-white p-8 rounded-xl shadow-lg text-center hover:shadow2xl transition duration-300 transform hover:-translate-y-2 cursor-pointer
+category-card product-hover" data-category="laptops">
+                            <div class="text-6xl mb-6 filter drop-shadow-lg">💻</div>
+
+                            <h3 class="text-2xl font-bold mb-4 text-gray-800">Laptops</h3>
+                            <p class="text-gray-600 mb-6">Las mejores marcas y modelos para
+                                trabajo y gaming</p>
+                            <a href="./categoria.html" class="text-blue-600 font-semibold">Ver más →</a>
+                        </div>
+
+
+                        <div class="bg-white p-8 rounded-xl shadow-lg text-center hover:shadow2xl transition duration-300 transform hover:-translate-y-2 cursor-pointer
+category-card product-hover" data-category="celulares">
+                            <div class="text-6xl mb-6 filter drop-shadow-lg">📱</div>
+                            <h3 class="text-2xl font-bold mb-4 text-gray-800">Celulares</h3>
+                            <p class="text-gray-600 mb-6">Última tecnología móvil de todas las
+                                marcas</p>
+                            <a href="./categoria.html" class="text-blue-600 font-semibold">Ver más →</a>
+                        </div>
+
+
+
+                        <div class="bg-white p-8 rounded-xl shadow-lg text-center hover:shadow2xl transition duration-300 transform hover:-translate-y-2 cursor-pointer
+category-card product-hover" data-category="componentes">
+                            <div class="text-6xl mb-6 filter drop-shadow-lg">⚙</div>
+                            <h3 class="text-2xl font-bold mb-4 text-gray-800">Componentes
+                                PC</h3>
+                            <p class="text-gray-600 mb-6">Arma tu PC ideal con los mejores
+                                componentes</p>
+                            <a href="./categoria.html" class="text-blue-600 font-semibold">Ver más →</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="productos-destacados py-16 bg-white">
+                <div class="container mx-auto px-4">
+                    <div class="text-center mb-12">
+                        <h2 class="text-4xl font-bold mb-4">Productos Destacados</h2>
+                        <p class="text-gray-600 text-lg">Los productos más populares de nuestra
+                            tienda</p>
+                    </div>
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" id="productos-grid">
+
+
+                        <div class="border rounded-xl overflow-hidden shadow-lg hover:shadow2xl transition duration-300 transform hover:-translate-y-1 product-card
+product-hover">
+                            <div class="bg-linear-to-br from-gray-100 to-gray-200 h-64 flex
+items-center justify-center relative overflow-hidden">
+                                <img src="https://images.unsplash.com/photo-1496181133206-
+80ce9b88a853?w=600" alt="MacBook Pro M3" class="w-full h-full object-cover">
+                                <div class="absolute top-4 right-4 bg-red-500 text-white px-2
+py-1 rounded-full text-sm font-bold">
+                                    -15%
+                                </div>
+                            </div>
+                            <div class="p-6">
+                                <h3 class="font-bold text-xl mb-2 text-gray-800">MacBook Pro
+                                    M3</h3>
+                                <p class="text-gray-600 mb-4">Potencia profesional para
+                                    creativos y desarrolladores</p>
+                                <div class="flex items-center mb-4">
+                                    <div class="flex text-yellow-400">⭐⭐⭐⭐⭐</div>
+                                    <span class="text-gray-500 text-sm ml-2">(128
+                                        reseñas)</span>
+                                </div>
+                                <div class="flex justify-between items-center">
+                                    <div>
+
+                                        <span class="text-gray-400 line-through textsm">$2,899,000</span>
+                                        <span class="text-3xl font-bold text-blue-600 ml2">$2,499,000</span>
+                                    </div>
+
+                                    <button class="bg-linear-to-r from-blue-600 to-purple-600
+hover:from-blue-700 hover:to-purple-700 text-white px-6 py-2 rounded-lg
+transition-all duration-200 add-to-cart-btn transform hover:scale-105" data-product="MacBook Pro M3"
+                                        data-price="2499000" data-id="macbook-pro-m3"
+                                        data-image="https://images.unsplash.com/photo1496181133206-80ce9b88a853?w=600">
+                                        Comprar
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="border rounded-xl overflow-hidden shadow-lg hover:shadow2xl transition duration-300 transform hover:-translate-y-1 product-card
+product-hover">
+                            <div class="bg-linear-to-br from-gray-100 to-gray-200 h-64 flex
+items-center justify-center relative overflow-hidden">
+                                <img src="https://images.unsplash.com/photo-1511707171634-
+5f897ff02aa9?w=600" alt="iPhone 15 Pro" class="w-full h-full object-cover">
+                                <div class="absolute top-4 right-4 bg-green-500 text-white px-2
+py-1 rounded-full text-sm font-bold">
+                                    NUEVO
+                                </div>
+                            </div>
+                            <div class="p-6">
+                                <h3 class="font-bold text-xl mb-2 text-gray-800">iPhone 15
+                                    Pro</h3>
+                                <p class="text-gray-600 mb-4">El smartphone más avanzado con
+                                    chip A17 Pro</p>
+                                <div class="flex items-center mb-4">
+                                    <div class="flex text-yellow-400">⭐⭐⭐⭐⭐</div>
+                                    <span class="text-gray-500 text-sm ml-2">(89
+                                        reseñas)</span>
+                                </div>
+                                <div class="flex justify-between items-center">
+                                    <div>
+                                        <span class="text-3xl font-bold text-blue600">$1,199,000</span>
+                                    </div>
+                                    <button class="bg-linear-to-r from-blue-600 to-purple-600
+hover:from-blue-700 hover:to-purple-700 text-white px-6 py-2 rounded-lg
+transition-all duration-200 add-to-cart-btn transform hover:scale-105" data-product="iPhone 15 Pro"
+                                        data-price="1199000" data-id="iphone-15-pro"
+                                        data-image="https://images.unsplash.com/photo1511707171634-5f897ff02aa9?w=600">
+                                        Comprar
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="border rounded-xl overflow-hidden shadow-lg hover:shadow2xl transition duration-300 transform hover:-translate-y-1 product-card
+product-hover">
+                            <div class="bg-linear-to-br from-gray-100 to-gray-200 h-64 flex
+items-center justify-center relative overflow-hidden">
+                                <img src="https://images.unsplash.com/photo-1580894894513-
+541e068a3e2b?w=600" alt="RTX 4070 Super" class="w-full h-full object-cover">
+                                <div class="absolute top-4 right-4 bg-red-500 text-white px-2
+py-1 rounded-full text-sm font-bold">
+                                    -20%
+                                </div>
+                            </div>
+                            <div class="p-6">
+                                <h3 class="font-bold text-xl mb-2 text-gray-800">RTX 4070
+                                    Super</h3>
+                                <p class="text-gray-600 mb-4">Tarjeta gráfica de nueva
+                                    generación para gaming</p>
+                                <div class="flex items-center mb-4">
+                                    <div class="flex text-yellow-400">⭐⭐⭐⭐⭐</div>
+                                    <span class="text-gray-500 text-sm ml-2">(156
+                                        reseñas)</span>
+                                </div>
+                                <div class="flex justify-between items-center">
+                                    <div>
+                                        <span class="text-gray-400 line-through textsm">$749,000</span>
+                                        <span class="text-3xl font-bold text-blue-600 ml2">$599,000</span>
+                                    </div>
+                                    <button class="bg-linear-to-r from-blue-600 to-purple-600
+hover:from-blue-700 hover:to-purple-700 text-white px-6 py-2 rounded-lg
+transition-all duration-200 add-to-cart-btn transform hover:scale-105" data-product="RTX 4070 Super"
+                                        data-price="599000" data-id="rtx-4070-super"
+                                        data-image="https://images.unsplash.com/photo1580894894513-541e068a3e2b?w=600">
+                                        Comprar
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+
+                    <div class="text-center mt-12">
+                        <a href="./productos.html" class="bg-gray-800 text-white px-8 py-4 rounded-lg text-lg
+font-semibold hover:bg-gray-700 transition duration-300 transform hover:scale105">
+                            Ver Todos los Productos
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <section class="py-16 bg-linear-to-r from-blue-600 to-purple-600">
+                <div class="container mx-auto px-4 text-center text-white">
+                    <h2 class="text-3xl font-bold mb-4">Mantente al día con
+                        TechStore Pro</h2>
+                    <p class="text-lg mb-8 opacity-90">Recibe las últimas ofertas y
+                        novedades tecnológicas</p>
+                    <div class="max-w-md mx-auto flex gap-4">
+                        <input type="email" placeholder="Tu email" class="flex-1
+px-4 py-3 bg-white rounded-lg text-gray-900 placeholder-gray-400 outline-none
+focus:ring-2 focus:ring-blue-500 transition duration-200">
+                        <button class="bg-white text-blue-600 px-6 py-3 rounded-lg
+font-semibold hover:bg-gray-100 transition duration-200">
+                            Suscribirse
+                        </button>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer mejorado coherente con carrito.html -->
+        <footer id="contacto" class="bg-gray-900 text-white py-12">
+            <div class="max-w-7xl mx-auto px-4">
+                <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                    <div>
+                        <div class="flex items-center mb-4">
+                            <div class="bg-linear-to-r from-blue-600 to-purple-600
+text-white p-2 rounded-lg mr-3">
+                                <svg class="w-5 h-5" fill="currentColor" viewBox="0
+0 20 20">
+                                    <path d="M3 4a1 1 0 011-1h12a1 1 0 011 1v2a1 1
+0 01-1 1H4a1 1 0 01-1-1V4zM3 10a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H4a1 1
+0 01-1-1v-6zM14 9a1 1 0 00-1 1v6a1 1 0 001 1h2a1 1 0 001-1v-6a1 1 0 00-1-1h2z" />
+                                </svg>
+                            </div>
+                            <h3 class="text-xl font-bold">TechStore Pro</h3>
+                        </div>
+                        <p class="text-gray-400 mb-4">Tu tienda de tecnología de
+                            confianza con los mejores productos y precios.</p>
+                    </div>
+                    <div>
+
+                        <h3 class="text-lg font-semibold mb-4">Enlaces</h3>
+                        <ul class="space-y-2 text-gray-400">
+                            <li><a href="./index.html" class="hover:text-white
+transition-colors duration-200">Inicio</a></li>
+                            <li><a href="./productos.html" class="hover:text-white
+transition-colors duration-200">Productos</a></li>
+                            <li><a href="#" class="hover:text-white
+transition-colors duration-200">Carrito</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="text-lg font-semibold mb-4">Atención</h3>
+                        <ul class="space-y-2 text-gray-400">
+                            <li><a href="#" class="hover:text-white transitioncolors duration-200">Contacto</a></li>
+                            <li><a href="#" class="hover:text-white transitioncolors duration-200">Envíos</a></li>
+                            <li><a href="#" class="hover:text-white transitioncolors duration-200">Devoluciones</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="text-lg font-semibold mb-4">Legal</h3>
+                        <ul class="space-y-2 text-gray-400">
+                            <li><a href="#" class="hover:text-white transitioncolors duration-200">Términos</a></li>
+                            <li><a href="#" class="hover:text-white transitioncolors duration-200">Privacidad</a></li>
+                            <li><a href="#" class="hover:text-white transitioncolors duration-200">Cookies</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="border-t border-gray-800 mt-8 pt-8 text-center textgray-400">
+                    <p>&copy; 2025 TechStore Pro. Todos los derechos
+                        reservados.</p>
+                </div>
+            </div>
+        </footer>
+        
+        <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
+        <script src="./java/perfil.js"></script>
+        <script src="./java/carrito.js"></script>
+    </body>
+
+    </html>

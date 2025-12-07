@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechStore Pro - Su tienda tecnológica online</title>
+
+    <!-- Tailwind compilado -->
+    <link rel="stylesheet" href="../style/output.css">
+
+    <!-- Flowbite -->
+    <link href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css" rel="stylesheet" />
+</head>
+
+
+    <body class="bg-gray-50 font-sans">
+        <header class="bg-white shadow-lg sticky top-0 z-50">
+            <nav class="container mx-auto px-4 py-4">
+                <div class="flex justify-between items-center">
+                    <div class=" flex items-center">
+                        <div class="bg-linear-to-r from-blue-600 to-purple-600
+    text-white px-3 py-2 rounded-lg mr-3">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0
+    20 20">
+                                <path d="M3 4a1 1 0 011-1h12a1 1 0 011 1v2a1 1 0
+    01-1 1H4a1 1 0 01-1-1V4zM3 10a1 1 0 011-1h6a1 1 0 011 1v6a1
+    1 0 01-1 1H4a1 1 0 01-1-1v-6zM14 9a1 1 0 00-1 1v6a1
+    1 0 001 1h2a1 1 0 001-1v-6a1 1 0 00-1-1h-2z" />
+                            </svg>
+
+                        </div>
+                        <h1 class="text-2xl font-bold bg-linear-to-r from-blue-600
+    to-purple-600 bg-clip-text text-transparent">
+                            <a href="./index.html">TechStore Pro</a>
+                        </h1>
+                    </div>
+
+                    <!-- menu .html -->
+                    <div class="hidden md:flex space-x-6">
+                        <a href="./index.html"
+                            class="text-gray-700 hover.text-blue-600 font-medium transition-colors duration-200 relative group">
+                            Inicio
+                            <span
+                                class="absolute -bottom-1 left-0 w-0 h-0.5 bg-blue-600 transition-all duration-200 group-hover:w-full"></span>
+                        </a>
+                        <a href="./productos.html"
+                            class="text-gray-700 hover:text-blue-600 font-medium transition-colors duration-200 relative group">
+                            Productos
+                            <span
+                                class="absolute -bottom-1 left-0 w-0 h-0.5 bg-blue-600 transition-all duration-200 group-hover:w-full"></span>
+                        </a>
+                        <a href="./categoria.html"
+                            class="text-gray-700 hover:text-blue-600 font-medium transition-colors duration-200 relative group">
+                            Categorías
+                            <span
+                                class="absolute -bottom-1 left-0 w-0 h-0.5 bg-blue-600 transition-all duration-200 group-hover:w-full"></span>
+
+                        </a>
+                        <a href="./contactenos.html"
+                            class="text-gray-700 hover:text-blue-600 fontmedium transition-colors duration-200 relative group">
+                            Contacto
+                            <span
+                                class="absolute -bottom-1 left-0 w-0 h-0.5 bg-blue-600 transition-all duration-200 group-hover:w-full"></span>
+                        </a>
+
+                    </div>
+
+                    <div class="flex items-center space-x-4">
+
+                        <a href="#" class="cart-icon relative group p-2.5 hover:bglinear-to-r hover:from-blue-50 hover:to-indigo-50 rounded-xl transition-all
+    duration-300 transform hover:scale-105">
+                            <svg class="w-6 h-6 text-gray-700 group-hover:textblue-600 transition-all duration-300 group-hover:rotate-3"
+                                fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+                                <path stroke-linecap="round" strokelinejoin="round" d="M3 3h2l.4 2M7 13h10l4-8H5.4m0 0L7 13m0 0l-1.1 5M7 13l-1.1
+    5m0 0h1.1m0-5v5m0 0h10m-10 0a2 2 0 104 0m6 0a2 2 0 100 4" />
+                            </svg>
+
+                            <span id="cart-counter" class="cart-counter-pulse
+    absolute -top-2 -right-2 bg-linear-to-r from-red-500 via-pink-500 to-red-600
+    text-white text-xs font-bold rounded-full min-w-5 h-5 flex items-center
+    justify-center px-1 shadow-lg border-2 border-white" style="display:
+    none;">0</span>
+                        </a>
+
+                    </div>
+
+                </div>
+            </nav>
+        </header>
+
+        <!-- CONTENIDO PRINCIPAL - FORMULARIO DE LOGIN -->
+        <main
+            class="flex flex-items-center justify-center px-4 py-12 bg-linear-to-br from-blue-50 via-white to-purple-50">
+            <div class="w-full max-w-md animate-fade-in">
+
+                <!-- Card principal del login -->
+                <div class="bg-linear-to-r from-blue-100 to-purple-100 rounded-2xl shadow-2xl p-6 border border-gray-100">
+
+                    <!-- Título y descripción -->
+                    <div class="text-center mb-8">
+    <div
+        class="inline-flex items-center justify-center w-16 h-16 bg-linear-to-r from-blue-600 to-purple-600 rounded-full mb-4">
+
+                            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+                            </svg>
+                        </div>
+                        <h1 class="text-3xl font-bold text-gray-900 mb-2">¡Bienvenido de vuelta!</h1>
+                        <p class="text-gray-600">Inicia sesión en tu cuenta de TechStore Pro</p>
+                    </div>
+
+                    <!-- Formulario de login -->
+                    <form id="login-form" class="space-y-6">
+
+                        <!-- Campo de correo -->
+                        <div>
+                            <label for="email" class="block text-sm font-medium text-gray-700 mb-2">Correo
+                                electrónico</label>
+                            <div class="relative">
+                                <svg class="absolute w-5 h-5 text-gray-400 left-3 top-3" fill="none"
+                                    stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M16 12l-4-4-4 4m0 0l4 4 4-4m-4-4v12" />
+                                </svg>
+                                <input id="email" name="email" type="email" placeholder="tuemail@gmail.com"
+                                    class="pl-10 w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-blue-500 focus:border-blue-500 transition-all duration-200 text-gray-900" />
+                            </div>
+                            <p id="email-error" class="mt-1 text-sm text-red-500 hidden"></p>
+                        </div>
+
+                        <!-- Campo de contraseña -->
+                        <div>
+                            <label for="password"
+                                class="block text-sm font-medium text-gray-700 mb-2">Contraseña</label>
+                                
+                            <div class="relative">
+                            <input 
+                                type="password" 
+                                id="password" 
+                                name="password"
+                                required
+                                placeholder="••••••••"
+                                class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all duration-200 pr-12 text-gray-900" >
+                        
+                            <button 
+                                type="button" 
+                                id="toggle-password"
+                                class="absolute right-3 top-1/2 -translate-y-1/2 text-gray-400 hover:text-gray-600 transition-colors" > 
+                        
+                                <svg id="eye-icon-open" class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
+                                </svg>
+                                <svg id="eye-icon-closed" class="w-5 h-5 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M13.875 18.825A10.05 10.05 0 0112 19c-4.478 0-8.268-2.943-9.543-7a9.97 9.97 0 011.563-3.029m5.858.908a3 3 0 114.243 4.243M9.878 9.878l4.242 4.242M9.88 9.88l-3.29-3.29m7.532 7.532l3.29 3.29M3 3l3.59 3.59m0 0A9.953 9.953 0 0112 5c4.478 0 8.268 2.943 9.543 7a10.025 10.025 0 01-4.132 5.411m0 0L21 21" />
+                                </svg>
+                                </button>
+                                        </div>
+                            <p id="password-error" class="mt-1 text-sm text-red-500 hidden"></p>
+                        </div>
+                        
+
+                        <!-- Recordar sesión y olvidar contraseña -->
+                        <div class="flex items-center justify-between">
+                            <label class="flex items-center cursor-pointer">
+                                <input type="checkbox" id="remember-me"
+                                    class="w-4 h-4 text-blue-600 border-gray-300 rounded focus:ring-blue-500">
+                                <span class="ml-2 text-sm text-gray-700">Recordarme</span>
+                            </label>
+                            <a href="./recuperar.html" class="text-sm text-blue-600 hover:text-blue-700 font-medium transition-colors">
+                                ¿Olvidaste tu contraseña?
+                            </a>
+                        </div>
+
+                        <!-- Mensaje de error general -->
+                        <div id="login-error"
+                            class="hidden bg-red-50 border border-red-200 text-red-600 px-4 py-3 rounded-lg">
+                            <div class="flex items-center">
+                                <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M12 9v2m0 4h.01M12 5a7 7 0 11-7 7a7 7 0 017-7z" />
+                                </svg>
+                                <span id="login-error-message"></span>
+                            </div>
+                        </div>
+
+                        <!-- Botón de inicio de sesión -->
+                        <button id="login-btn" type="submit"
+                            class="w-full py-2 px-4 bg-linear-to-r from-blue-600 to-purple-600 text-white font-semibold rounded-lg hover:from-blue-700 hover:to-purple-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 transition-all">
+                            Iniciar sesión
+                        </button>
+                    </form>
+
+
+                    <div class="relative my-6">
+                        <div class="absolute inset-0 flex items-center">
+                            <div class="w-full border-t border-gray-300"></div>
+                        </div>
+                        <div class="relative flex justify-center text-sm">
+                            <span class="px-4 bg-white text-gray-500">O continúa con</span>
+                        </div>
+                    </div>
+
+                    <!-- Social login -->
+                    <div class="grid grid-cols-2 gap-3">
+
+                        <button
+                            class="flex items-center justify-center px-4 py-3 border border-gray-300 rounded-lg hover:bg-linear-to-r from-purple-600 to-blue-600 transition-colors">
+                            <svg class="w-5 h-5 mr-2" viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"
+                                    fill="#4285F4" />
+                                <path
+                                    d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"
+                                    fill="#34A853" />
+                                <path
+                                    d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"
+                                    fill="#FBBC05" />
+                                <path
+                                    d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"
+                                    fill="#EA4335" />
+                            </svg>
+
+                            Google
+                        </button>
+
+                        <button
+                            class="flex items-center justify-center px-4 py-3 border border-gray-300 rounded-lg hover:bg-linear-to-r from-purple-600 to-blue-600">
+                        <svg xmlns="http://www.w3.org/2000/svg"
+                        class="w-7 h-7 mr-2 text-[#1877F2]"
+                        fill="currentColor"
+                            viewBox="0 0 640 640"><!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                            <path
+                                d="M576 320C576 178.6 461.4 64 320 64C178.6 64 64 178.6 64 320C64 440 146.7 540.8 258.2 568.5L258.2 398.2L205.4 398.2L205.4 320L258.2 320L258.2 286.3C258.2 199.2 297.6 158.8 383.2 158.8C399.4 158.8 427.4 162 438.9 165.2L438.9 236C432.9 235.4 422.4 235 409.3 235C367.3 235 351.1 250.9 351.1 292.2L351.1 320L434.7 320L420.3 398.2L351 398.2L351 574.1C477.8 558.8 576 450.9 576 320z" />
+                        </svg>
+                            Facebook
+                        </button>
+
+                    </div>
+
+                    <!-- Registrarse -->
+                    <div class="mt-6 text-center">
+                        <p class="text-gray-600">
+                            ¿No tienes cuenta?
+                            <a href="./registro.html"
+                                class="text-blue-600 hover:text-blue-700 font-semibold transition-colors">
+                                Regístrate aquí
+                            </a>
+                        </p>
+                    </div>
+
+                    <!-- Info adicional -->
+                    <div class="mt-6 text-center text-sm text-gray-600">
+                        <p>
+                            <svg class="w-4 h-4 inline mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4" />
+                            </svg>
+                            Tus datos están protegidos con encriptación de nivel empresarial
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+
+<!--footer-->
+        <footer id="contacto" class="bg-gray-900 text-white py-12">
+            <div class="max-w-7xl mx-auto px-4">
+                <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                    <div>
+                        <div class="flex items-center mb-4">
+                            <div class="bg-linear-to-r from-blue-600 to-purple-600
+text-white p-2 rounded-lg mr-3">
+                                <svg class="w-5 h-5" fill="currentColor" viewBox="0
+0 20 20">
+                                    <path d="M3 4a1 1 0 011-1h12a1 1 0 011 1v2a1 1
+0 01-1 1H4a1 1 0 01-1-1V4zM3 10a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H4a1 1
+0 01-1-1v-6zM14 9a1 1 0 00-1 1v6a1 1 0 001 1h2a1 1 0 001-1v-6a1 1 0 00-1-1h2z" />
+                                </svg>
+                            </div>
+                            <h3 class="text-xl font-bold">TechStore Pro</h3>
+                        </div>
+                        <p class="text-gray-400 mb-4">Tu tienda de tecnología de
+                            confianza con los mejores productos y precios.</p>
+                    </div>
+                    <div>
+
+                        <h3 class="text-lg font-semibold mb-4">Enlaces</h3>
+                        <ul class="space-y-2 text-gray-400">
+                            <li><a href="./index.html" class="hover:text-white
+transition-colors duration-200">Inicio</a></li>
+                            <li><a href="./src/pages/productos.html" class="hover:text-white
+transition-colors duration-200">Productos</a></li>
+                            <li><a href="#" class="hover:text-white
+transition-colors duration-200">Carrito</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="text-lg font-semibold mb-4">Atención</h3>
+                        <ul class="space-y-2 text-gray-400">
+                            <li><a href="#" class="hover:text-white transitioncolors duration-200">Contacto</a></li>
+                            <li><a href="#" class="hover:text-white transitioncolors duration-200">Envíos</a></li>
+                            <li><a href="#" class="hover:text-white transitioncolors duration-200">Devoluciones</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="text-lg font-semibold mb-4">Legal</h3>
+                        <ul class="space-y-2 text-gray-400">
+                            <li><a href="#" class="hover:text-white transitioncolors duration-200">Términos</a></li>
+                            <li><a href="#" class="hover:text-white transitioncolors duration-200">Privacidad</a></li>
+                            <li><a href="#" class="hover:text-white transitioncolors duration-200">Cookies</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="border-t border-gray-800 mt-8 pt-8 text-center textgray-400">
+                    <p>&copy; 2025 TechStore Pro. Todos los derechos
+                        reservados.</p>
+                </div>
+            </div>
+        </footer>
+        <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
+        <script src="../pages/java/toggle.js"></script>
+        <script src="../pages/java/login.js"></script>
+    </body>
+
+    </html>

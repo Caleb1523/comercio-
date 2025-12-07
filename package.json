@@ -1,0 +1,27 @@
+{
+  "name": "proyecto-ecomerce",
+  "version": "1.0.0",
+  "description": "��#\u0000 \u0000c\u0000o\u0000m\u0000e\u0000r\u0000c\u0000i\u0000o\u0000\r\u0000 \u0000",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "npx @tailwindcss/cli -i ./src/style/input.css -o ./src/style/output.css --watch",
+    "build": "npx @tailwindcss/cli -i ./src/style/input.css -o ./src/style/output.css --minify"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@tailwindcss/cli": "^4.1.16",
+    "tailwindcss": "^4.1.16"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vanegasjoseignacio2-cyber/comercio.git"
+  },
+  "bugs": {
+    "url": "https://github.com/vanegasjoseignacio2-cyber/comercio/issues"
+  },
+  "homepage": "https://github.com/vanegasjoseignacio2-cyber/comercio#readme"
+}
