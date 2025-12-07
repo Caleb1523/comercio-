@@ -33,7 +33,7 @@ export const registrarUser = async (req, res) => {
         });
 
         await nuevoUser.save();
-        res.status(201).json({ message: "Usuario registrado exitosamente" });
+            res.status(201).json({message:"Usuario registrado exitosamente"});
 
     } catch (error) {
         res.status(500).json({ message: "Error al crear usuario", error: error.message });
