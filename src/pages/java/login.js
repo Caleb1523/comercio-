@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', function () {
     console.log('✅ Página cargada correctamente - Sistema listo');
 
     // URL de la API
-    const API_URL = "https://ecomercej.onrender.com/api/login";
+    const API_URL = "https://comercio-jovu.onrender.com/api/login";
 
     // Evento al enviar el formulario
     document.getElementById('login-form').addEventListener('submit', async function (e) {

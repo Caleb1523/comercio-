@@ -1,6 +1,6 @@
 // carrito.js - Controlador del carrito de compras
 
-const API_URL = 'https://ecomercej.onrender.com/api';
+const API_URL = 'https://comercio-jovu.onrender.com/api';
 
 // Cargar carrito al inicio
 document.addEventListener('DOMContentLoaded', () => {

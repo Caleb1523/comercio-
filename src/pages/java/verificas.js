@@ -1,7 +1,7 @@
 
 // Lógica para verificar código y cambiar contraseña
 
-const API_URL = 'https://ecomercej.onrender.com/api/recuperar';
+const API_URL = 'https://comercio-jovu.onrender.com/api/recuperar';
 
 document.addEventListener('DOMContentLoaded', () => {
     // Obtener email guardado

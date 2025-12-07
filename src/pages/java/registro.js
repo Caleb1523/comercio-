@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', function () {
     console.log('✅ Página de registro cargada');
 
     const form = document.getElementById('registro');
-    const API_URL = "https://ecomercej.onrender.com/api/user/register";
+    const API_URL = "https://comercio-jovu.onrender.com/api/user/register";
 
     // Evento al enviar el formulario
     form.addEventListener('submit', async function (e) {

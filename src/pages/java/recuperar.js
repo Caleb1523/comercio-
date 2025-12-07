@@ -1,7 +1,7 @@
 // pages/recuperar-password.js
 // Lógica para solicitar código de recuperación
 
-const API_URL = 'https://ecomercej.onrender.com/api/recuperar';
+const API_URL = 'https://comercio-jovu.onrender.com/api/recuperar';
 
 document.addEventListener('DOMContentLoaded', () => {
     const btnEnviarCodigo = document.getElementById('enviar-code');

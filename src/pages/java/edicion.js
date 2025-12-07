@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", async () => {
 
     // Cargar datos actuales del usuario
     try {
-        const res = await fetch("https://ecomercej.onrender.com/api/perfil/obtener", {
+        const res = await fetch("https://comercio-jovu.onrender.com/api/perfil/obtener", {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ email: perfil.correo })
